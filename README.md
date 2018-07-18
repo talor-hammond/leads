@@ -10,8 +10,8 @@ React native app w geolocation + messaging
 
 ## Authentication:
 * **Login**
-  *FrontEnd
-    *React-Native Componentes
+  * FrontEnd
+    * React-Native Componentes
     
    
 * **Login**
