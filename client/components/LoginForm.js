@@ -4,7 +4,8 @@ import {
     Text,
     View,
     TextInput,
-    TouchableOpacity
+    TouchableOpacity,
+    StatusBar
 } from 'react-native';
 
 
@@ -12,14 +13,24 @@ class LoginForm extends React.Component {
     render() {
         return (
             <View style={styles.container}>
+                <StatusBar
+                    barStyle="light-content"
+                />
                 <TextInput
                     placeholder="email"
+                    keyboardType="email-address"
+                    autoCapitalize="none"
+                    autoCorrect={false}
+                    returnKeyType="next"
+                    onSubmitEditing={() => this.passwordInput.focus()}
                     style={styles.input}
                 />
                 <TextInput
                     placeholder="password"
+                    returnKeyType="go"
                     secureTextEntry
                     style={styles.input}
+                    ref={(input) => this.passwordInput = input}
                 />
                 <TouchableOpacity style={styles.buttonContainer}>
                     <Text style={styles.buttonText}>Login</Text>
