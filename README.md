@@ -10,9 +10,8 @@ React native app w geolocation + messaging
   
 ### Resources:
 * [Waffle](https://waffle.io/talor-hammond/leads)
-* **JWT; Auth**
- * (https://github.com/ruru-bootcamp-2018/jwt-auth)
- * (https://github.com/ruru-bootcamp-2018/boilerplate-redux-async)
+ * [JWT; auth](https://github.com/ruru-bootcamp-2018/jwt-auth)
+ * [Auth; finished boilerplate](https://github.com/ruru-bootcamp-2018/boilerplate-redux-async)
  * **[AsyncStorage](https://www.youtube.com/watch?v=aCe0h50hyCc)** 
 
 
