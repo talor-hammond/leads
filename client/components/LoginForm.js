@@ -13,11 +13,12 @@ class LoginForm extends React.Component {
         return (
             <View style={styles.container}>
                 <TextInput
-                placeholder="email"
+                    placeholder="email"
                     style={styles.input}
                 />
                 <TextInput
-                placeholder="password"
+                    placeholder="password"
+                    secureTextEntry
                     style={styles.input}
                 />
                 <TouchableOpacity style={styles.buttonContainer}>
@@ -30,11 +31,10 @@ class LoginForm extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        padding: 20,
-        
+        padding: 20
     },
     input: {
-        height: 40,
+        height: 50,
         backgroundColor: 'rgba(255,255,255,0.2)',
         marginBottom: 10,
         color: '#FFF',
@@ -42,11 +42,12 @@ const styles = StyleSheet.create({
     },
     buttonContainer: {
         backgroundColor: '#2980b9',
-        paddingVertical: 10
+        paddingVertical: 15,
     },
     buttonText: {
         textAlign: 'center',
-        color: "#FFFFFF"
+        color: '#FFFFFF',
+        fontWeight: '700'
     }
 });
 
