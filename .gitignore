@@ -6,6 +6,9 @@
 # dependencies
 /node_modules
 
+# bundle stuff
+bundle.*
+
 # misc
 .env
 .env.local
