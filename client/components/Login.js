@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 // React native components:
 import {
@@ -6,8 +6,10 @@ import {
     Text,
     View,
     Image,
-    KeyboardAvoidingView
-} from 'react-native';
+    Keyboard,
+    KeyboardAvoidingView,
+    TouchableWithoutFeedback
+} from 'react-native'
 
 import LoginForm from './LoginForm'
 
@@ -18,19 +20,21 @@ export default class Login extends React.Component {
     render() {
         return (
             <KeyboardAvoidingView behavior='padding' style={styles.container}>
-                <View style={styles.logoContainer}>
-                    <Image
-                        style={styles.logo}
-                        source={logo}
-                    />
-                    <Text style={styles.title}>He's just a poor boy, from a poor family</Text>
-                </View>
+                <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
+                    <View style={styles.logoContainer}>
+                        <Image
+                            style={styles.logo}
+                            source={logo}
+                        />
+                        <Text style={styles.title}>He's just a poor boy, from a poor family</Text>
+                    </View>
+                </TouchableWithoutFeedback>
 
                 <View style={styles.formContainer}>
                     <LoginForm />
                 </View>
             </KeyboardAvoidingView >
-        );
+        )
     }
 }
 
@@ -55,4 +59,4 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         opacity: 0.9
     }
-});
+})
