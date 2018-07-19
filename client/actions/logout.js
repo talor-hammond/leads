@@ -24,4 +24,4 @@ export function logoutUser () {
     removeUser()
     dispatch(receiveLogout())
   }
-}
+} 
