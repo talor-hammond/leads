@@ -18,6 +18,7 @@ class LoginForm extends React.Component {
                 />
                 <TextInput
                     placeholder="email"
+                    placeholderTextColor='#FFF'
                     keyboardType="email-address"
                     autoCapitalize="none"
                     autoCorrect={false}
@@ -27,6 +28,7 @@ class LoginForm extends React.Component {
                 />
                 <TextInput
                     placeholder="password"
+                    placeholderTextColor='#FFF'
                     returnKeyType="go"
                     secureTextEntry
                     style={styles.input}
