@@ -7,7 +7,7 @@
     "jest-expo": "~27.0.0",
     "nodemon": "^1.11.0",
     "react-native-scripts": "1.14.0",
-    "sqlite3": "^3.1.8",
+    "sqlite3": "^4.0.2",
     "supertest": "^3.0.0",
     "webpack-cli": "^3.1.0"
   },
