@@ -57,6 +57,6 @@ const styles = StyleSheet.create({
         marginTop: 10,
         width: 135,
         textAlign: 'center',
-        opacity: 0.9
+        opacity: 0.89
     }
 })
