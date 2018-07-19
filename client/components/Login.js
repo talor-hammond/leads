@@ -16,7 +16,7 @@ import LoginForm from './LoginForm'
 // Assets:
 const logo = require('../assets/logo.png')
 
-export default class Login extends React.Component {
+export default class Login extends React.Component { 
     render() {
         return (
             <KeyboardAvoidingView behavior='padding' style={styles.container}>
